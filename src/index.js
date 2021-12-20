@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { marked } from 'marked';
+
+marked.setOptions({
+  breaks: true
+});
 
 ReactDOM.render(
   <React.StrictMode>
