@@ -4,9 +4,14 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { marked } from 'marked';
+import Prism from "prismjs";
+import "prismjs/themes/prism-tomorrow.css"
 
 marked.setOptions({
-  breaks: true
+  breaks: true,
+  highlight: function (code) {
+    return Prism.highlight(code, Prism.languages.javascript, 'javascript');
+  }
 });
 
 ReactDOM.render(
