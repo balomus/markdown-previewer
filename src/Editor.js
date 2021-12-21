@@ -1,8 +1,12 @@
-const Editor = () => {
+const Editor = ({data, setData}) => {
+    const handleChange = (e) => {
+        setData(e.target.value);
+    }
+
     return ( 
         <div id="editor">
             <h2>Editor</h2>
-            <p>Editor will go here.</p>
+            <textarea value={data} onChange={handleChange}></textarea>
         </div>
      );
 }

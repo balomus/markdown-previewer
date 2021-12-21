@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <Editor data={data}/>
+      <Editor data={data} setData={setData}/>
       <Preview data={data}/>
     </div>
   );
