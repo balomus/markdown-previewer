@@ -2,7 +2,6 @@ import './App.css';
 import Preview from './Preview';
 import Editor from './Editor';
 import { useState } from 'react';
-import { Container } from 'react-bootstrap';
 
 function App() {
   
@@ -53,12 +52,10 @@ And here. | Okay. | I think we get it.
   const [data, setData] = useState(initialText);
 
   return (
-      <Container>
-        <div className="App">
-          <Editor data={data} setData={setData}/>
-          <Preview data={data}/>
-        </div>
-    </Container>
+    <div className="App container">
+      <Editor data={data} setData={setData}/>
+      <Preview data={data}/>
+    </div>
   );
 }
 

@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import { marked } from 'marked';
 import Prism from "prismjs";
 import "prismjs/themes/prism.css"
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 marked.setOptions({
   breaks: true,
