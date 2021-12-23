@@ -1,15 +1,9 @@
 import { marked } from "marked";
-import { useEffect } from "react";
 
 const Preview = (props) => {
     const render = (text) => {
         return marked.parse(text);
     }
-
-    useEffect(() => {
-        console.log("useEffect ran");
-        
-    }, []);
 
     return ( 
         <div id="preview">
